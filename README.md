@@ -12,10 +12,10 @@ Just clone the repo and run the example project.
 
 # Basic Usage
 - Clone repo and build.
-<img src="https://github.com/SabrinaJiang14/DateCountDown/blob/master/image/1.png" width="70%">
+<img src="https://github.com/SabrinaJiang14/DateCountDown/blob/master/image/1.png">
 
 - Show in Finder
-<img src="https://github.com/SabrinaJiang14/DateCountDown/blob/master/image/2.png" width="856" height="978">
+<img src="https://github.com/SabrinaJiang14/DateCountDown/blob/master/image/2.png" width="856px" height="978px">
 
 - Drag into application folder, and double click
 ![GITHUB](https://github.com/SabrinaJiang14/DateCountDown/blob/master/image/3.png "drag_into_application")
