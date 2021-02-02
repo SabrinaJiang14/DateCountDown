@@ -13,10 +13,13 @@ Just clone the repo and run the example project.
 # Basic Usage
 - Clone repo and build.
 ![GITHUB](https://github.com/SabrinaJiang14/DateCountDown/blob/master/image/1.png "clone_repo_and_build")
+
 - Show in Finder
 ![GITHUB](https://github.com/SabrinaJiang14/DateCountDown/blob/master/image/2.png "show_in_finder")
+
 - Drag into application folder, and double click
 ![GITHUB](https://github.com/SabrinaJiang14/DateCountDown/blob/master/image/3.png "drag_into_application")
+
 - Done!!
 ![GITHUB](https://github.com/SabrinaJiang14/DateCountDown/blob/master/image/4.png "done")
 
