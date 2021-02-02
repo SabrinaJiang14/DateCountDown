@@ -17,6 +17,7 @@ class AddViewController: NSViewController {
     var repoImp:RepositoryImp?
     
     //MARK: - Private priperty
+    private let TEXTFIELD_MAX_LIMIT = 20
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -88,6 +89,11 @@ class AddViewController: NSViewController {
 extension AddViewController : NSTextFieldDelegate {
     func controlTextDidChange(_ obj: Notification) {
         let text = obj.object as! NSTextField
-        btnDone.isEnabled = text.stringValue.count > 0
+        let stringValue = text.stringValue
+        btnDone.isEnabled = stringValue.count > 0
+        if stringValue.count > TEXTFIELD_MAX_LIMIT {
+            let index = stringValue.index(stringValue.startIndex, offsetBy: TEXTFIELD_MAX_LIMIT)
+            text.stringValue = String(stringValue[..<index])
+        }
     }
 }

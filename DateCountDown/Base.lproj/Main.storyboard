@@ -432,13 +432,13 @@
                                 </connections>
                             </button>
                             <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1DZ-d8-Yw5">
-                                <rect key="frame" x="15" y="45" width="254" height="241"/>
+                                <rect key="frame" x="15" y="45" width="254" height="189"/>
                                 <clipView key="contentView" id="bPN-bp-8Sw">
-                                    <rect key="frame" x="1" y="0.0" width="252" height="240"/>
+                                    <rect key="frame" x="1" y="0.0" width="252" height="188"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="AHf-1e-F8F" viewBased="YES" id="UGQ-Vt-HwE">
-                                            <rect key="frame" x="0.0" y="0.0" width="252" height="215"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="252" height="163"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -624,7 +624,7 @@
                             </textField>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fVd-tc-wxd">
                                 <rect key="frame" x="122" y="250" width="298" height="21"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="Fih-M8-odq">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="1-20個字元" drawsBackground="YES" id="Fih-M8-odq">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -634,8 +634,8 @@
                                 <rect key="frame" x="122" y="198" width="145" height="28"/>
                                 <datePickerCell key="cell" borderStyle="bezel" alignment="left" useCurrentDate="YES" id="EqY-u1-eCe">
                                     <font key="font" metaFont="system"/>
-                                    <date key="date" timeIntervalSinceReferenceDate="633862547.140535">
-                                        <!--2021-02-01 08:55:47 +0000-->
+                                    <date key="date" timeIntervalSinceReferenceDate="633937203.110057">
+                                        <!--2021-02-02 05:40:03 +0000-->
                                     </date>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -676,8 +676,8 @@
                                 <rect key="frame" x="281" y="74" width="139" height="148"/>
                                 <datePickerCell key="cell" borderStyle="bezel" alignment="left" datePickerStyle="clockAndCalendar" useCurrentDate="YES" id="Xqa-d5-Tj6">
                                     <font key="font" metaFont="system"/>
-                                    <date key="date" timeIntervalSinceReferenceDate="633862547.14616895">
-                                        <!--2021-02-01 08:55:47 +0000-->
+                                    <date key="date" timeIntervalSinceReferenceDate="633937203.11578703">
+                                        <!--2021-02-02 05:40:03 +0000-->
                                     </date>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
