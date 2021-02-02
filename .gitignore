@@ -1,0 +1,8 @@
+.DS_Store
+/.build
+/Packages
+/*.xcodeproj
+xcuserdata
+.swiftpm/xcode/package.xcworkspace
+.DS_Store
+TestVoIP.xcodeproj/project.xcworkspace
