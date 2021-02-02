@@ -15,7 +15,7 @@ Just clone the repo and run the example project.
 <img src="https://github.com/SabrinaJiang14/DateCountDown/blob/master/image/1.png" width="70%">
 
 - Show in Finder
-<img src="https://github.com/SabrinaJiang14/DateCountDown/blob/master/image/2.png" height="70%">
+<img src="https://github.com/SabrinaJiang14/DateCountDown/blob/master/image/2.png" width="856" height="978">
 
 - Drag into application folder, and double click
 ![GITHUB](https://github.com/SabrinaJiang14/DateCountDown/blob/master/image/3.png "drag_into_application")
