@@ -18,10 +18,10 @@ Just clone the repo and run the example project.
 <img src="https://github.com/SabrinaJiang14/DateCountDown/blob/master/image/2.png" width="428px" height="489px">
 
 - Drag into application folder, and double click
-![GITHUB](https://github.com/SabrinaJiang14/DateCountDown/blob/master/image/3.png "drag_into_application")
+<img src="https://github.com/SabrinaJiang14/DateCountDown/blob/master/image/3.png">
 
 - Done!!
-![GITHUB](https://github.com/SabrinaJiang14/DateCountDown/blob/master/image/4.png "done")
+<img src="https://github.com/SabrinaJiang14/DateCountDown/blob/master/image/4.png" width="422px" height="475px">
 
 # License
 
