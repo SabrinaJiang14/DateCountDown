@@ -22,4 +22,4 @@ Just clone the repo and run the example project.
 
 # License
 
-SJNetworkHelper is released under the MIT license. See [LICENSE](https://github.com/SabrinaJiang14/DateCountDown/blob/master/LICENSE) for details.
+DateCountDown is released under the MIT license. See [LICENSE](https://github.com/SabrinaJiang14/DateCountDown/blob/master/LICENSE) for details.
