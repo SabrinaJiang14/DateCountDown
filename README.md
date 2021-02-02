@@ -12,13 +12,13 @@ Just clone the repo and run the example project.
 
 # Basic Usage
 - Clone repo and build.
-
+https://github.com/SabrinaJiang14/DateCountDown/blob/master/image/1.png
 - Show in Finder
-
+https://github.com/SabrinaJiang14/DateCountDown/blob/master/image/2.png
 - Drag into application folder, and double click
-
+https://github.com/SabrinaJiang14/DateCountDown/blob/master/image/3.png
 - Done!!
-
+https://github.com/SabrinaJiang14/DateCountDown/blob/master/image/4.png
 
 # License
 
