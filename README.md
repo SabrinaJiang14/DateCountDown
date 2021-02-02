@@ -12,14 +12,14 @@ Just clone the repo and run the example project.
 
 # Basic Usage
 - Clone repo and build.
-https://github.com/SabrinaJiang14/DateCountDown/blob/master/image/1.png
+![GITHUB](https://github.com/SabrinaJiang14/DateCountDown/blob/master/image/1.png "clone_repo_and_build")
 - Show in Finder
-https://github.com/SabrinaJiang14/DateCountDown/blob/master/image/2.png
+![GITHUB](https://github.com/SabrinaJiang14/DateCountDown/blob/master/image/2.png "show_in_finder")
 - Drag into application folder, and double click
-https://github.com/SabrinaJiang14/DateCountDown/blob/master/image/3.png
+![GITHUB](https://github.com/SabrinaJiang14/DateCountDown/blob/master/image/2.png "drag_into_application")
 - Done!!
-https://github.com/SabrinaJiang14/DateCountDown/blob/master/image/4.png
+![GITHUB](https://github.com/SabrinaJiang14/DateCountDown/blob/master/image/2.png "done")
 
 # License
 
-SJNetworkHelper is released under the MIT license. See (LICENSE)[https://github.com/SabrinaJiang14/DateCountDown/blob/master/LICENSE] for details.
+SJNetworkHelper is released under the MIT license. See [LICENSE](https://github.com/SabrinaJiang14/DateCountDown/blob/master/LICENSE) for details.
