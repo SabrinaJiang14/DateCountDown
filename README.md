@@ -16,9 +16,9 @@ Just clone the repo and run the example project.
 - Show in Finder
 ![GITHUB](https://github.com/SabrinaJiang14/DateCountDown/blob/master/image/2.png "show_in_finder")
 - Drag into application folder, and double click
-![GITHUB](https://github.com/SabrinaJiang14/DateCountDown/blob/master/image/2.png "drag_into_application")
+![GITHUB](https://github.com/SabrinaJiang14/DateCountDown/blob/master/image/3.png "drag_into_application")
 - Done!!
-![GITHUB](https://github.com/SabrinaJiang14/DateCountDown/blob/master/image/2.png "done")
+![GITHUB](https://github.com/SabrinaJiang14/DateCountDown/blob/master/image/4.png "done")
 
 # License
 
