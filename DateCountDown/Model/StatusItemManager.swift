@@ -17,7 +17,9 @@ class StatusItemManager : NSObject {
     
     private var firstItem:CountDown?
     private var cancellables:Set<AnyCancellable> = Set<AnyCancellable>()
+    private var firstCancellable:AnyCancellable?
     private let timeInterval:TimeInterval = 60*60
+    private var firstLaunch:Bool = true
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -31,10 +33,14 @@ class StatusItemManager : NSObject {
     func initilized() {
         initStatusItem()
         initPopover()
-        initTime()
         repoImp.$firstItem.sink { [weak self] (first) in
-            self?.firstItem = first
-            self?.tick()
+            guard let self = self else { return }
+            self.firstItem = first
+            self.tick()
+            if self.firstLaunch {
+                self.initFirstTime()
+                self.firstLaunch = false
+            }
         }.store(in: &cancellables)
     }
     
@@ -76,8 +82,38 @@ class StatusItemManager : NSObject {
 }
 
 private extension StatusItemManager {
-    private func initTime() {
+    // correction the loop time
+    private func initFirstTime() {
+        if let list = firstItem {
+            let df = DateFormatter()
+            df.setupLocalAndFormat()
+            let lhs = df.date(from: list.date)
+            let diffComponents = Calendar.current.dateComponents([.day, .hour, .minute, .second], from: Date(), to: lhs!)
+            let minute = diffComponents.minute ?? 0
+            let second = diffComponents.second ?? 0
+//            let minute = 0
+//            let second = 7
+            if (minute != 0 || second != 0) {
+                let correctionTime = (minute * 60) + second + 1
+                Print.info(correctionTime)
+                firstCancellable = Timer.publish(every: TimeInterval(correctionTime), on: .main, in: .common)
+                    .autoconnect()
+                    .sink { [weak self] (time) in
+                        Print.info(time)
+                        self?.reload()
+                        self?.initRegularTime()
+                        self?.firstCancellable = nil
+                }
+            }else{
+                initRegularTime()
+            }
+        }
+    }
+    
+    // every 1 hour run ones
+    private func initRegularTime() {
         Timer.publish(every: timeInterval, on: .main, in: .common).autoconnect().sink { [weak self] (time) in
+            Print.info(time)
             self?.reload()
         }.store(in: &cancellables)
     }

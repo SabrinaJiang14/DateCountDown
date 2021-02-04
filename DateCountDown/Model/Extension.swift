@@ -53,3 +53,12 @@ extension DateFormatter {
         self.locale = Locale(identifier: "zh_TW")
     }
 }
+
+enum Print {
+    static public func info<T>(_ message:T, file:String = #file, function:String = #function, line:Int = #line) {
+        #if DEBUG
+        let fileName = (file as NSString).lastPathComponent
+        print("\n✅ [INFO] [\(fileName)][\(function)][\(line)] : \(message)")
+        #endif
+    }
+}
