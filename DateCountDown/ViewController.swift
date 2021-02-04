@@ -96,20 +96,25 @@ extension ViewController : NSTableViewDelegate, NSTableViewDataSource {
         df.setupLocalAndFormat()
         let data = dataSources[row]
         let date = df.date(from: data.date) ?? Date()
-        let diffComponents = Calendar.current.dateComponents([.day], from: date, to: Date())
-        let diffTimeInterval = abs(diffComponents.day ?? 0)
-        
+        let diffComponents = Calendar.current.dateComponents([.day, .hour], from: Date(), to: date)
+        let day:Double = Double(diffComponents.day ?? 0)
+        var diffTimeInterval:Double = 0.0
+        if day <= 0.0 {
+            diffTimeInterval = Double(diffComponents.hour ?? 0) / 24.0
+        }else{
+            diffTimeInterval = Double(day)
+        }
         if row == 0 {
             let firstCell = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "FirstCustomCell"), owner: self) as! FirstCustomCell
             firstCell.txtName.stringValue = data.name
             firstCell.txtTime.stringValue = data.date
-            firstCell.txtCountdown.stringValue = String(format: "%d", diffTimeInterval)
+            firstCell.txtCountdown.stringValue = String(format: "%.1f", diffTimeInterval)
             return firstCell
         }else{
             let smallCell = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "SmallCustomCell"), owner: self) as! SmallCustomCell
             smallCell.txtName.stringValue = data.name
             smallCell.txtTime.stringValue = data.date
-            smallCell.txtCountdown.stringValue = String(format: "%d", diffTimeInterval)
+            smallCell.txtCountdown.stringValue = String(format: "%.0f", diffTimeInterval)
             return smallCell
         }
     }

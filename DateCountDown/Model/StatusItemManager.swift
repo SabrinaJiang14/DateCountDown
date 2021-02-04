@@ -87,8 +87,16 @@ private extension StatusItemManager {
             let df = DateFormatter()
             df.setupLocalAndFormat()
             let lhs = df.date(from: list.date)
-            let diffComponents = Calendar.current.dateComponents([.day], from: lhs!, to: Date())
-            statusItem?.button?.title = String(format: "離 %@ 還有 %d 天", list.name, abs(diffComponents.day ?? 0))
+            let diffComponents = Calendar.current.dateComponents([.day, .hour], from: Date(), to: lhs!)
+            var title = ""
+            let day = diffComponents.day ?? 0
+            if day <= 0 {
+                title = String(format: "離 %@ 還有 %d 小時", list.name, abs(diffComponents.hour ?? 0))
+            }else{
+                title = String(format: "離 %@ 還有 %d 天", list.name, day)
+            }
+            
+            statusItem?.button?.title = title
             statusItem?.button?.image = nil
         }else{
             statusItem?.button?.image = NSImage(named: "date")
