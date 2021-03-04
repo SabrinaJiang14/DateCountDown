@@ -92,4 +92,3 @@ struct CountDown : JSONCodable{
     var isInvalid:Bool = false
 }
 
-

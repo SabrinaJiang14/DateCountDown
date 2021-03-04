@@ -15,10 +15,10 @@ class LocalNotifications : NSObject {
         notificationCenter = UNUserNotificationCenter.current()
     }
     
-    func register(identifier:String, date:Date, event:String, completed: @escaping ((String) -> Void), failure: @escaping ((Error) -> Void)) {
+    func register(title:String = "倒數日期已到期！", body:String, identifier:String, date:Date, completed: @escaping ((String) -> Void), failure: @escaping ((Error) -> Void)) {
         let content = UNMutableNotificationContent()
-        content.title = "倒數日期已到期！"
-        content.body = String(format: "「%@」就是今天拉～～", event)
+        content.title = title
+        content.body = body
         
         content.userInfo = ["method": "new"]
         

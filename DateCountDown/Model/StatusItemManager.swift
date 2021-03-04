@@ -14,6 +14,7 @@ class StatusItemManager : NSObject {
     var converterVC : ViewController?
     var windowController: NSWindowController!
     let repoImp = RepositoryImp()
+    let battery = BatteryImp()
     
     private var firstItem:CountDown?
     private var cancellables:Set<AnyCancellable> = Set<AnyCancellable>()
@@ -31,6 +32,8 @@ class StatusItemManager : NSObject {
     }
     
     func initilized() {
+        battery.checkBattery()
+        
         initStatusItem()
         initPopover()
         repoImp.$firstItem.sink { [weak self] (first) in
@@ -46,6 +49,7 @@ class StatusItemManager : NSObject {
     
     @objc func reload() {
         repoImp.reloadData()
+        battery.checkBattery()
     }
     
     @objc func showConverterVC() {

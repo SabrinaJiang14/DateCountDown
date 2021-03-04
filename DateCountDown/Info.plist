@@ -32,5 +32,7 @@
 	<true/>
 	<key>NSSupportsSuddenTermination</key>
 	<true/>
+	<key>NSFileProviderDomainUsageDescription</key>
+	<string>Do you allow read file in this app ?</string>
 </dict>
 </plist>

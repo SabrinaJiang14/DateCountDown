@@ -77,12 +77,11 @@ class AddViewController: NSViewController {
         df.dateFormat = "yyyyMMddHHmmss"
         let registeriIdentifier = df.string(from: dateField.dateValue)
         let localNotify = LocalNotifications()
-        localNotify.register(identifier: registeriIdentifier, date: dateField.dateValue, event: name) { (msg) in
+        localNotify.register(body: String(format: "「%@」就是今天拉～～", name), identifier: registeriIdentifier, date: dateField.dateValue) { (msg) in
             print(msg)
         } failure: { (err) in
             print(err.localizedDescription)
         }
-
     }
 }
 
